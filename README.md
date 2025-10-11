@@ -16,7 +16,7 @@ Một boilerplate đơn giản để khởi tạo dự án Node.js với Express
 ```
 boilerplate-nodejs-mongodb/
 ├── src/
-│   ├── index.js          # Entry point của ứng dụng
+│   ├── index.ts          # Entry point của ứng dụng
 │   └── database.js       # Database connection configuration
 ├── package.json
 └── README.md
@@ -56,7 +56,7 @@ npm start
 
 ### Hoặc chạy trực tiếp:
 ```bash
-node src/index.js
+node src/index.ts
 ```
 
 ## 📋 Yêu cầu hệ thống
@@ -109,7 +109,7 @@ export default mongoDbInit;
 ```
 
 ### Server Configuration
-File `src/index.js` khởi tạo Express server:
+File `src/index.ts` khởi tạo Express server:
 
 ```javascript
 import express from "express";
@@ -146,7 +146,7 @@ app.listen(PORT, () => {
 
 1. **Thêm routes:**
 ```javascript
-// src/routes/index.js
+// src/routes/index.ts
 import express from 'express';
 const router = express.Router();
 
